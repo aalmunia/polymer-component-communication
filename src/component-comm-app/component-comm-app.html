@@ -1,0 +1,37 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../test-component-one/test-component-one.html">
+<link rel="import" href="../test-component-two/test-component-two.html">
+<link rel="import" href="../test-component-three/test-component-three.html">
+
+<dom-module id="component-comm-app">
+  <template>
+    <style>
+      
+    </style>
+    <div>      
+    <test-component-one></test-component-one><br /><br />
+    <test-component-two></test-component-two><br /><br />
+    <test-component-three></test-component-three>
+    </div>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class ComponentCommApp extends Polymer.Element {
+      static get is() { return 'component-comm-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'component-comm-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(ComponentCommApp.is, ComponentCommApp);
+  </script>
+</dom-module>

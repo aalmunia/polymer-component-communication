@@ -1,0 +1,7 @@
+{
+  "name": "component-comm",
+  "short_name": "component-comm",
+  "description": "This is a tutorial to learn component intercommunication in Polymer 2",
+  "start_url": "/",
+  "display": "standalone"
+}
